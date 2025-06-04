@@ -1,0 +1,6 @@
+@SakilaApi_HostAddress = http://localhost:5072
+
+GET {{SakilaApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
