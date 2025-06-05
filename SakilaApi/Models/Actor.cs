@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using SakilaApi.Models;
 namespace SakilaApi.Models
 {
     [Table("actor")]
@@ -18,5 +18,7 @@ namespace SakilaApi.Models
 
         [Column("last_update")]
         public DateTime LastUpdate { get; set; }
+
+        public List<FilmActor> FilmActors { get; set; } = new();
     }
 }
